@@ -1,0 +1,62 @@
+@charset "UTF-8";
+.tk-video-player-container{
+    position: absolute;
+    z-index: 10;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000000;
+}
+.tk-video-player-container .media-player-box .close-btn{
+    display: none;
+}
+.tk-video-player-container .tk-media-player.tk-media-player-total-control-box{
+    position: absolute;
+    width: 98%;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 1s;
+}
+.tk-video-player-container.show-controller .tk-media-player.tk-media-player-total-control-box{
+    opacity: 1;
+}
+.tk-video-player-container  .tk-media-player-total-control{
+    position: relative;
+    width: 100%;
+   /* top: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);*/
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.tk-media-player-container.tk-video-player-container .tk-video-player-close-btn{
+    position: absolute;
+    transform: translateY(0%);
+    margin-left: 0;
+    background-size: 10px auto;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    right: 20px;
+    top: 20px;
+}
+.tk-media-player-container.tk-video-player-container .tk-media-player-source{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.tk-media-player-container.tk-video-player-container .tk-media-player-source .tk-audio-or-video-player{
+    width: 100%;
+    height: 100%;
+}
+.tk-media-player-container.tk-video-player-container .media-player-box .media-player-control-container{
+    padding: 10px 20px 10px 15px;
+}
